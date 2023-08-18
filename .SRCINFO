@@ -9,10 +9,10 @@ pkgbase = linux-aarch64-flippy
 	makedepends = dtc
 	makedepends = uboot-tools
 	options = !strip
-	source = linux-6.1.y-b33cb9adf00ad50e6de135fe31b1a40c44bde3d3.tar.gz::https://github.com/unifreq/linux-6.1.y/archive/b33cb9adf00ad50e6de135fe31b1a40c44bde3d3.tar.gz
+	source = https://github.com/unifreq/linux-6.1.y.git
 	source = config
 	source = linux.preset
-	sha256sums = 6eb8d86f9a4a9f015ff39872d713f05a21e492afbee2c5b8d663be9a578bccb9
+	sha256sums = SKIP
 	sha256sums = c632d2e4383ec12206757bdade32b06539c25b39b2befd149e096b6dbaf57be7
 	sha256sums = bdcd6cbf19284b60fac6d6772f1e0ec2e2fe03ce7fe3d7d16844dd6d2b5711f3
 

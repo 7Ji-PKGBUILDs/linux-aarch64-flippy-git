@@ -6,7 +6,7 @@ _pkgver_suffix=flippy
 _pkgver_uname="${_pkgver_main}-${_pkgver_suffix}"
 _flippy_repo='linux-6.1.y'
 _flippy_commit='b33cb9adf00ad50e6de135fe31b1a40c44bde3d3'
-_srcname="${_flippy_repo}-${_flippy_commit}"
+_srcname="${_flippy_repo}"
 
 pkgbase=linux-aarch64-flippy
 pkgname=(
@@ -26,12 +26,12 @@ makedepends=( # Since we don't build the doc, most of the makedeps for other lin
 )
 options=(!strip)
 source=(
-  "${_srcname}.tar.gz::${url}/archive/${_flippy_commit}.tar.gz"
+  "${url}.git"
   'config'
   'linux.preset'
 )
 sha256sums=(
-  '6eb8d86f9a4a9f015ff39872d713f05a21e492afbee2c5b8d663be9a578bccb9'
+  'SKIP'
   'c632d2e4383ec12206757bdade32b06539c25b39b2befd149e096b6dbaf57be7'
   'bdcd6cbf19284b60fac6d6772f1e0ec2e2fe03ce7fe3d7d16844dd6d2b5711f3'
 )

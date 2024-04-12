@@ -34,7 +34,7 @@ sha256sums=(
 prepare() {
   cd arm64-kernel-configs
   local _config= _latest_config=
-  for _config in config-"${_ver_major_minor}"-*-flippy-*; do
+  for _config in config-"${_ver_major_minor}".*-flippy-*; do
     if [[ -z "${_latest_config}" || $(vercmp "${_config}" "${_latest_config}") == 1 ]]; then
       _latest_config="${_config}"
     fi

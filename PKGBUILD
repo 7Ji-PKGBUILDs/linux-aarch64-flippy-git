@@ -13,7 +13,7 @@ pkgname=(
   "${pkgbase}-dtb-amlogic"
   "${pkgbase}-dtb-rockchip"
 )
-pkgver=6.6.26
+pkgver=6.6.26.r630.6352c2a52.9615a01
 pkgrel=1
 arch=('aarch64')
 url="https://github.com/unifreq/${_flippy_repo}"

@@ -94,7 +94,7 @@ build() {
 
 _dtb_common_pkg="${pkgbase}-dtb"
 
-package_linux-aarch64-flippy() {
+package_linux-aarch64-flippy-git() {
   pkgdesc="The Linux Kernel and module - ${_desc}"
   depends=(
     "${_dtb_common_pkg}"
@@ -141,7 +141,7 @@ package_linux-aarch64-flippy() {
   rm -f "${_dir_module}/"{build,source}
 }
 
-package_linux-aarch64-flippy-headers() {
+package_linux-aarch64-flippy-git-headers() {
   pkgdesc="Header files and scripts for building modules for linux kernel - ${_desc}"
   
   # Mostly copied from alarm's linux-aarch64 and modified
@@ -220,7 +220,7 @@ package_linux-aarch64-flippy-headers() {
 
 _dtb_common_provides="${_dtb_common_pkg}=${pkgver}"
 
-package_linux-aarch64-flippy-dtb-allwinner() {
+package_linux-aarch64-flippy-git-dtb-allwinner() {
   pkgdesc="DTB files for Allwinner SoCs for flippy's AArch64 kernel"
   provides=(
     "${_dtb_common_provides}"
@@ -230,7 +230,7 @@ package_linux-aarch64-flippy-dtb-allwinner() {
   cp -t "${pkgdir}/boot/dtbs/${pkgbase}" -a "${srcdir}/dtbs/allwinner"
 }
 
-package_linux-aarch64-flippy-dtb-amlogic() {
+package_linux-aarch64-flippy-git-dtb-amlogic() {
   pkgdesc="DTB files for Amlogic SoCs for flippy's AArch64 kernel"
   provides=(
     "${_dtb_common_provides}"
@@ -240,7 +240,7 @@ package_linux-aarch64-flippy-dtb-amlogic() {
   cp -t "${pkgdir}/boot/dtbs/${pkgbase}" -a "${srcdir}/dtbs/amlogic"
 }
 
-package_linux-aarch64-flippy-dtb-rockchip() {
+package_linux-aarch64-flippy-git-dtb-rockchip() {
   pkgdesc="DTB files for Rockchip SoCs for flippy's AArch64 kernel"
   provides=(
     "${_dtb_common_provides}"

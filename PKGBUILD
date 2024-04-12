@@ -53,7 +53,6 @@ prepare() {
 
 
   echo "Setting version..."
-  scripts/setlocalversion --save-scmversion
   echo - > localversion.09-hyphen
   echo "r$(( "${_rev_kernel}" + "${_rev_config}" ))" > localversion.10-release-total
   echo - > localversion.19-hyphen

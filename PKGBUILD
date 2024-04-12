@@ -45,7 +45,7 @@ prepare() {
   fi
   local _rev_config="$(git rev-list --count HEAD "${_latest_config}")"
   local _id_config="$(git rev-parse --short HEAD:"${_latest_config}")"
-  echo "Using flippy's latest config ${_latest_config} (ver ${_rev_config}, id ${_id_config}})..."
+  echo "Using flippy's latest config ${_latest_config} (ver ${_rev_config}, id ${_id_config})..."
 
   cd ../"${_srcname}"
   local _rev_kernel="$(git rev-list --count HEAD)"

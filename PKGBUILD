@@ -19,7 +19,7 @@ arch=('aarch64')
 url="https://github.com/unifreq/${_flippy_repo}"
 license=('GPL2')
 makedepends=( # Since we don't build the doc, most of the makedeps for other linux packages are not needed here
-  'kmod' 'bc' 'dtc' 'uboot-tools'
+  'kmod' 'bc' 'dtc' 'uboot-tools' 'pahole'
 )
 options=(!strip)
 source=(

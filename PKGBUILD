@@ -13,7 +13,7 @@ pkgname=(
   "${pkgbase}-dtb-amlogic"
   "${pkgbase}-dtb-rockchip"
 )
-pkgver=6.6.26.r630.6352c2a52.9615a01
+pkgver=6.6.117.r899.6c5550ba3.2584eec
 pkgrel=1
 arch=('aarch64')
 url="https://github.com/unifreq/${_flippy_repo}"
@@ -34,7 +34,7 @@ sha256sums=(
 prepare() {
   cd arm64-kernel-configs
   local _config= _latest_config=
-  for _config in config-"${_ver_major_minor}".*-flippy-*; do
+  for _config in mainline/"${_ver_major_minor}"/config-"${_ver_major_minor}".*-flippy-*; do
     if [[ -z "${_latest_config}" || $(vercmp "${_config}" "${_latest_config}") == 1 ]]; then
       _latest_config="${_config}"
     fi
